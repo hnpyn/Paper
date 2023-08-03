@@ -1,7 +1,3 @@
-# Paper
-
-My paper reading
-
 # Autonomous Driving
 
 ## Occupancy
