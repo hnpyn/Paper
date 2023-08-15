@@ -8,6 +8,10 @@ Yuanhui Huang<sup>1,2*</sup>, Wenzhao Zheng<sup>1,2*</sup>, Yunpeng Zhang<sup>3<
 
 ( <sup>1</sup>Beijing National Research Center for Information Science and Technology, China <sup>2</sup>Department of Automation, Tsinghua University, China <sup>3</sup>PhiGent Robotics <sup>*</sup>Equal contribution <sup>†</sup>Corresponding author )
 
+![TPVFormer Pipeline](./images/TPVFormer-pipeline.png)
+
+Vision-based, motivated by MonoScene, generalize BEV by accompanying it with two perpendicular planes to construct three cross-planes perpendicular to each other, can produces consistent semantic voxel occupancy prediction with only sparse point supervision during training. ([Details](./docs/TPVFormer.md))
+
 [[Paper in arXiv](https://arxiv.org/pdf/2302.07817.pdf)] [[Code](https://github.com/wzzheng/TPVFormer)]
 
 ### [ICCV 2023] OccNet: Scene as Occupancy
