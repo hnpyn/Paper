@@ -4,6 +4,8 @@
 
 ## Hybrid explicit-implicit representations Approach
 
+[Efficient Geometry-aware 3D Generative Adversarial Networks](https://arxiv.org/pdf/2112.07945.pdf)
+
 ### Generalizing BEV to TPV
 
 ![Voxel-BEV-TPV](../images/Voxel-BEV-TPV.png)
