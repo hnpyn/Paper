@@ -70,6 +70,10 @@ the authour generate occupancy data with dense and high quality occupancy annota
 
     annotate the flow velocity of voxel based on the 3D box velocity
 
+OpenScene
+
+![openscene-flow](../images/openscene-flow.gif)
+
 ## Conclusion
 
 The OccNet trained on semantic scene completion task can obtain general representation for 3D space owing to the scene reconstructed in the occupancy descriptor.
