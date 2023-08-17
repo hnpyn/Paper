@@ -48,4 +48,24 @@ three axis-aligned orthogonal TPV planes, may provide complementary clues
 
     exchange their information across different views
 
+    for example, for top planes, simply sample a few random points
+
+    for the side and front planes, sample 3D points uniformly along the direction perpendicular to the top plane and project them onto the side and front planes
+
+    calculate the sampling offsets and attention weights for each reference point through linear layers and sum up the sampled features weighted by their attention score
+
+## Experiments
+
+![TPVFormer-experiments](../images/TPVFormer-experiments.jpeg)
+
+* 3D semantic occupancy prediction
+
+    sparse supervision, dense prediction
+
+* LiDAR segmentation
+
+* Semantic Scene Completion
+
 ## Conclusion
+
+TPVFormer is able to describe the finegrained structures of a 3D scene efficiently. It produces consistent semantic voxel occupancy prediction with only sparse point supervision during training

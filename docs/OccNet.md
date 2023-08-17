@@ -18,13 +18,21 @@
 
 ### Cascade Voxel Decoder
 
+recover the height information in voxel feature
+
+( why? directly using BEV feature or directly reconstructing voxel feature from perspective view suffers fromperformance or efficiency drop )
+
 * **From BEV to Cascade Voxel**
 
-    increase height, decrise feature dimension
+    $B_{t−1}$ and $B_t$ are lifted into $V_{t−1,i}$ and $V_{t,i}$ via feed-forward network. Decoder (voxel-based temporal self-attention and voxel-based spatial cross-attention modules) increase height of voxel space, decrease feature dimension
 
 * **Voxel-based Temporal Self-Attention**
 
-    align the history $V'_{t-1,i}$ to the current occupancy features $V_{t,i}$ via the position of ego-vehicle
+    align the history $V'_{t-1,i}$ to the current occupancy features $V_{t,i}$ via the position of ego-vehicle, then calculate 3D Deformable Attention
+
+* **Voxel-based Spatial Cross-Attention**
+
+    the voxel feature $V_{t,i}$ interacts with the multi-scale image features $F_t$ with 2D deformable attention
 
 * **3D Deformable Attention**
 
@@ -32,19 +40,15 @@
 
     $$3D{-}DA(\boldsymbol{q},\boldsymbol{p},V'_{t,i})=\sum_{m=1}^MW_m\sum_{k=1}^KA_{mk}W'_kV'_{t,i}(\boldsymbol{p}+{\Delta}\boldsymbol{p}_{mk})$$
 
-* **Voxel-based Spatial Cross-Attention**
-
-    the voxel feature $V_{t,i}$ interacts with the multi-scale image features $F_t$ with 2D deformable attention
-
 ### Exploiting Occupancy on Various Tasks
 
-* **Semantic Scene Completion**
+* <font color=red>**Semantic Scene Completion**</font>
 
-    design the MLP head to predict the semantic label of each voxel, the flow head with $L_1$ loss are attached to estimate the flow velocity per occupied voxels
+    design the MLP head to predict the semantic label of each voxel, the <font color=red>flow head</font> with $L_1$ loss are attached to estimate the flow velocity per occupied voxels
 
 * **3D Object Detection**
 
-    [BEVFormer](https://arxiv.org/pdf/2203.17270.pdf)
+    compact the occupancy descriptor into BEV, then apply a query-based detection head ([BEVFormer](https://arxiv.org/pdf/2203.17270.pdf))
 
 * **BEV segmentation**
 
@@ -54,13 +58,23 @@
 
 * **Motion Planning**
 
-    squeezed along the height dimension
+    The 3D occupancy results is squeezed along the height di- mension and the 3D boxes as well. All the semantic labels per BEV cell from either 3D occupancy or 3D boxes are turned into a 0-1 format
 
 ## Benchmark
 
 ### OpenOcc
 
-the authour generate occupancy data with dense and high quality occupancy annotations utilizing the sparse LiDAR information and 3D boxes, Moreover, they take the foreground object motion into consideration with additional flow annotation of object voxels
+![OccNet-dataset](../images/OccNet-dataset.jpeg)
+
+<center>
+(a) <a href=https://github.com/wzzheng/OpenOcc>TPVFormer</a>
+(b) <a href=https://github.com/FANG-MING/occupancy-for-nuscenes>occupancy-for-nuscenes</a>
+(c) OccNet
+(d) Flow
+</center>
+<br/>
+
+the authour generate occupancy data with dense and high quality occupancy annotations utilizing the sparse LiDAR information and 3D boxes ([nuscenes](https://github.com/nutonomy/nuscenes-devkit)). Moreover, they take the foreground object motion into consideration with additional flow annotation of object voxels
 
 * Independent Accumulation of Background and foreground
 
@@ -68,11 +82,19 @@ the authour generate occupancy data with dense and high quality occupancy annota
 
     first voxelize the 3D space and label the voxel based on the majority vote of labelled points in the voxel
 
-    annotate the flow velocity of voxel based on the 3D box velocity
+    annotate the flow velocity of voxel based on the 3D box velocity (threshold $v_{th}$ = 0.2m/s)
 
-OpenScene
+### [OpenScene](https://github.com/OpenDriveLab/OpenScene)
+
+a large dataset based on [nuplan](https://github.com/motional/nuplan-devkit)
 
 ![openscene-flow](../images/openscene-flow.gif)
+
+## Experiments
+
+3D Occupancy prediction
+
+![OccNet-experiments](../images/OccNet-experiments.png)
 
 ## Conclusion
 
