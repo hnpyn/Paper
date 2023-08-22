@@ -20,7 +20,7 @@
 
 recover the height information in voxel feature
 
-( why? directly using BEV feature or directly reconstructing voxel feature from perspective view suffers fromperformance or efficiency drop )
+( why? directly using BEV feature or directly reconstructing voxel feature from perspective view suffers from performance or efficiency drop )
 
 * **From BEV to Cascade Voxel**
 
@@ -58,7 +58,7 @@ recover the height information in voxel feature
 
 * **Motion Planning**
 
-    The 3D occupancy results is squeezed along the height di- mension and the 3D boxes as well. All the semantic labels per BEV cell from either 3D occupancy or 3D boxes are turned into a 0-1 format
+    The 3D occupancy results is squeezed along the height dimension and the 3D boxes as well. All the semantic labels per BEV cell from either 3D occupancy or 3D boxes are turned into a 0-1 format
 
 ## Benchmark
 

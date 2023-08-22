@@ -25,3 +25,7 @@ Chonghao Sima<sup>1,3∗†</sup>, Wenwen Tong<sup>2∗</sup>, Tai Wang<sup>1,4<
 Vision-based, voxel-wise, two-stage framework, obtains robust occupancy features from images and supports multiple driving tasks. ([Details](./docs/OccNet.md))
 
 [[Paper in arXiv](<https://arxiv.org/pdf/2306.02851.pdf>)] [[Code](<https://github.com/OpenDriveLab/OccNet>)]
+
+## Semantic Segmentation
+
+### [CVPR 2023] Temporal Consistent 3D LiDAR Representation Learning for Semantic Perception in Autonomous Driving
