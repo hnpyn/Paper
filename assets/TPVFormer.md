@@ -1,6 +1,6 @@
 # TPVFormer
 
-![TPVFormer](../images/TPVFormer.png)
+![TPVFormer](../assets/images/TPVFormer.png)
 
 ## Hybrid explicit-implicit representations Approach
 
@@ -8,13 +8,13 @@
 
 ### Generalizing BEV to TPV
 
-![Voxel-BEV-TPV](../images/Voxel-BEV-TPV.png)
+![Voxel-BEV-TPV](../assets/images/Voxel-BEV-TPV.png)
 
 three axis-aligned orthogonal TPV planes, may provide complementary clues
 
 * **Point Querying formulation**
 
-![point-query](../images/TPV-point-query.png)
+![point-query](../assets/images/TPV-point-query.png)
 
 * **Voxel feature formulation**
 
@@ -24,7 +24,7 @@ three axis-aligned orthogonal TPV planes, may provide complementary clues
 
 * **Overall Structure**
 
-![TPVFormer-pipeline](../images/TPVFormer-pipeline_1.png)
+![TPVFormer-pipeline](../assets/images/TPVFormer-pipeline_1.png)
 
 * **TPVQueries**
 
@@ -56,7 +56,7 @@ three axis-aligned orthogonal TPV planes, may provide complementary clues
 
 ## Experiments
 
-![TPVFormer-experiments](../images/TPVFormer-experiments.jpeg)
+![TPVFormer-experiments](../assets/images/TPVFormer-experiments.jpeg)
 
 * 3D semantic occupancy prediction
 

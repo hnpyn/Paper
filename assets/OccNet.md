@@ -1,6 +1,6 @@
 # OccNet
 
-![OccNet Pipeline](../images/OccNet-pipeline.png)
+![OccNet Pipeline](../assets/images/OccNet-pipeline.png)
 
 ## Two stages
 
@@ -64,7 +64,7 @@ recover the height information in voxel feature
 
 ### OpenOcc
 
-![OccNet-dataset](../images/OccNet-dataset.jpeg)
+![OccNet-dataset](../assets/images/OccNet-dataset.jpeg)
 
 <center>
 (a) <a href=https://github.com/wzzheng/OpenOcc>TPVFormer</a>
@@ -88,13 +88,13 @@ the authour generate occupancy data with dense and high quality occupancy annota
 
 a large dataset based on [nuplan](https://github.com/motional/nuplan-devkit)
 
-![openscene-flow](../images/openscene-flow.gif)
+![openscene-flow](../assets/images/openscene-flow.gif)
 
 ## Experiments
 
 3D Occupancy prediction
 
-![OccNet-experiments](../images/OccNet-experiments.png)
+![OccNet-experiments](../assets/images/OccNet-experiments.png)
 
 ## Conclusion
 
