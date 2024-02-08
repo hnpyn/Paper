@@ -29,3 +29,13 @@ Vision-based, voxel-wise, two-stage framework, obtains robust occupancy features
 ## Semantic Segmentation
 
 ### [CVPR 2023] Temporal Consistent 3D LiDAR Representation Learning for Semantic Perception in Autonomous Driving
+
+Lucas Nunes<sup>∗</sup>, Louis Wiesmann<sup>∗</sup>, Rodrigo Marcuzzi<sup>∗</sup>, Xieyuanli Chen<sup>∗</sup>, Jens Behley<sup>∗</sup>, Cyrill Stachniss<sup>∗,⋆,‡</sup>
+
+( <sup>∗</sup>University of Bonn, <sup>⋆</sup>University of Oxford, <sup>‡</sup>Lamarr Institute )
+
+![TARL Pipeline](./assets/images/TARL-pipeline.png)
+
+A novel self-supervised pre-training for 3D LiDAR data able to learn a robust and temporally- consistent representation by clustering together points from the same object viewed at different points in time.
+
+[[Paper in CVF](https://openaccess.thecvf.com/content/CVPR2023/papers/Nunes_Temporal_Consistent_3D_LiDAR_Representation_Learning_for_Semantic_Perception_in_CVPR_2023_paper.pdf)] [[Code](https://github.com/PRBonn/TARL)]
