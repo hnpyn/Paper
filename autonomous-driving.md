@@ -26,7 +26,31 @@ Vision-based, voxel-wise, two-stage framework, obtains robust occupancy features
 
 [[Paper in arXiv](<https://arxiv.org/pdf/2306.02851.pdf>)] [[Code](<https://github.com/OpenDriveLab/OccNet>)]
 
+### [arXiv] FlashOcc: Fast and Memory-Efficient Occupancy Prediction via Channel-to-Height Plugin
+
+Zichen Yu<sup>1</sup>, Changyong Shu<sup>2</sup>, Jiajun Deng<sup>3</sup>, Kangjie Lu<sup>2</sup>, Zongdai Liu<sup>2</sup>, Jiangyong Yu<sup>2</sup>, Dawei Yang<sup>2</sup>, Hui Li<sup>2</sup>, Yan Chen<sup>2</sup>
+
+( <sup>1</sup>Dalian University of Technology, <sup>2</sup>Houmo AI, <sup>3</sup>University of Adelaide )
+
+![FlashOcc](./assets/images/FlashOcc-pipeline.png)
+
+FlashOcc is a plug-and-play paradigm, to consolidate rapid and memory-efficient occupancy prediction while maintaining high precision. ([Details](./assets/FlashOcc.md))
+
+[[Paper in arXiv](https://arxiv.org/pdf/2311.12058)][[Code](https://github.com/Yzichen/FlashOcc)]
+
 ## Semantic Segmentation
+
+### [CVPR2020] PolarNet: An Improved Grid Representation for Online LiDAR Point Clouds Semantic Segmentation
+
+Yang Zhang<sup>∗1</sup>, Zixiang Zhou<sup>∗1</sup>, Philip David<sup>2</sup>, Xiangyu Yue<sup>3</sup>, Zerong Xi<sup>1</sup>, Boqing Gong<sup>†1</sup>, and Hassan Foroosh<sup>1</sup>
+
+( <sup>1</sup>Department of Computer Science, University of Central Florida, <sup>2</sup>Computational and Information Sciences Directorate, U.S. Army Research Laboratory, <sup>3</sup>Department of Electrical Engineering and Computer Sciences, University of California, Berkeley, <sup>*</sup>Contributed equally, <sup>†</sup>Now at Google )
+
+![PolarNet Overview](./assets/images/PolarNet-overview.png)
+
+Lidar-based, birds-eye-view, encoder-decoder framework, obtains 3D semantic segmentation results. Real-time and deployment-friendly. ([Details](./assets/PolarNet.md))
+
+[[Paper in arXiv](https://arxiv.org/pdf/2003.14032)] [[Code](https://github.com/edwardzhou130/PolarSeg)]
 
 ### [CVPR 2023] Temporal Consistent 3D LiDAR Representation Learning for Semantic Perception in Autonomous Driving
 
