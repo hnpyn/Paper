@@ -96,6 +96,8 @@ a large dataset based on [nuplan](https://github.com/motional/nuplan-devkit)
 
 ![OccNet-experiments](../assets/images/OccNet-experiments.png)
 
+![OccNet-experiments2](../assets/images/OccNet-experiments2.png)
+
 ## Conclusion
 
 The OccNet trained on semantic scene completion task can obtain general representation for 3D space owing to the scene reconstructed in the occupancy descriptor.

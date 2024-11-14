@@ -14,6 +14,8 @@ three axis-aligned orthogonal TPV planes, may provide complementary clues
 
 * **Point Querying formulation**
 
+    A query point at (x, y, z) in the real world
+
 ![point-query](../assets/images/TPV-point-query.png)
 
 * **Voxel feature formulation**
@@ -57,6 +59,8 @@ three axis-aligned orthogonal TPV planes, may provide complementary clues
 ## Experiments
 
 ![TPVFormer-experiments](../assets/images/TPVFormer-experiments.jpeg)
+
+![TPVFormer-experiments2](../assets/images/TPVFormer-experiments2.jpeg)
 
 * 3D semantic occupancy prediction
 
