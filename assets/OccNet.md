@@ -24,7 +24,7 @@ recover the height information in voxel feature
 
 * **From BEV to Cascade Voxel**
 
-    $B_{t−1}$ and $B_t$ are lifted into $V_{t−1,i}$ and $V_{t,i}$ via feed-forward network. Decoder (voxel-based temporal self-attention and voxel-based spatial cross-attention modules) increase height of voxel space, decrease feature dimension
+    $B_{t−1}$ and $B_t$ are lifted into $V_{t−1,i}$ and $V_{t,i}$ via feed-forward network. Decoder (voxel-based temporal self-attention and voxel-based spatial cross-attention modules) increase height of voxel space, decrease feature dimension (increase Z and decrease C)
 
 * **Voxel-based Temporal Self-Attention**
 
